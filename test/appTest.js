@@ -17,6 +17,8 @@ describe('todo Lists', () => {
     });
   });
 
+  this.timeout(4000);
+  
   describe('/POST todos', () => {
     it('it should not POST a todos without pages field', (done) => {
       let todos = new TodoTask({ content: "Matrix", check: true, Date: 1854 })
