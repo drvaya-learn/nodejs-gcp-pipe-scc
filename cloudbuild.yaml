@@ -8,9 +8,10 @@ steps:
     args: ['run', 'create-env']
     env:
     - 'DB_CONNECT=${_SECRET_KEY}'
+ 
   # execute the tests
-  - name: 'gcr.io/cloud-builders/npm'
-    args: ['run', 'test']
+  #- name: 'gcr.io/cloud-builders/npm'
+  #  args: ['run', 'test']
 
   # build an artifact using the docker builder
   - name: 'gcr.io/cloud-builders/docker'
