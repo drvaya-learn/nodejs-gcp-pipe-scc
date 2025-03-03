@@ -18,5 +18,5 @@ spec:
     spec:
       containers:
       - name: "todoapp"
-        image: "gcr.io/$_PROJECT_ID/$_REPO_NAME:latest"
+        image: "gcr.io/techwiz-drvaya/nodejs-gcp-pipe-scc:latest"
         imagePullPolicy: Always
